@@ -162,7 +162,7 @@ async function submitForm() {
     return;
   }
   
-  document.getElementById("loading").style.display = "block";
+  document.getElementById("loading").style.display = "flex";
   await comentarService.addComentar({
     id: generateRandomId(),
     name,
