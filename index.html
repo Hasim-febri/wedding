@@ -400,7 +400,7 @@ margin: 10px 0px 0px 0px!important;
 				</div>
 				<div class="elementor-element elementor-element-542845a8 af slide-up elementor-widget elementor-widget-heading" data-id="542845a8" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default">Cahya &amp; Hasim</h2>				</div>
+					<h2 class="elementor-heading-title elementor-size-default">Hasim &amp; Cahya</h2>				</div>
 				</div>
 				<div class="elementor-element elementor-element-6a962e29 af slide-up elementor-widget elementor-widget-heading" data-id="6a962e29" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
@@ -463,7 +463,7 @@ margin: 10px 0px 0px 0px!important;
 					<h2 class="elementor-heading-title elementor-size-default">02 JUNI 2026</h2>				</div>
 				</div>
 				<div class="elementor-element elementor-element-ff77cd5 elementor-align-center animated-slow elementor-invisible elementor-widget elementor-widget-button" data-id="ff77cd5" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;zoomIn&quot;,&quot;_animation_delay&quot;:10000}" data-widget_type="button.default">
-				<div class="elementor-widget-container" hidden>
+				<div class="elementor-widget-container">
 									<div class="elementor-button-wrapper">
 					<a class="elementor-button elementor-button-link elementor-size-xs" href="https://calendar.app.google/YCZv1cmimiYkV8Hk7" target="_blank">
 						<span class="elementor-button-content-wrapper">
@@ -960,19 +960,47 @@ margin: 10px 0px 0px 0px!important;
 						</span>
 
 					</button>
+					<div id="loading" class="loading-popup">
+						<div class="spinner"></div>
+						<p>Mengirim...</p>
+						</div>
 
 					</div>
 				<!-- LIST -->
 				<div id="wish-list" class="cui-container-comments"></div>
 				<div id="pagination" class="pagination"></div>
 
-				<!-- LOAD MORE -->
-				<div style="text-align:center; margin-top:10px;">
-					<button onclick="loadMore()" class="cui-form-btn">Load More</button>
-				</div>
-
 				</div>
 				<style>
+					.loading-popup{
+					position: fixed;
+					top:0;
+					left:0;
+					width:100%;
+					height:100%;
+					background: rgba(0,0,0,0.5);
+					display:none;
+					justify-content:center;
+					align-items:center;
+					flex-direction:column;
+					z-index:9999;
+					color:white;
+					}
+
+					.spinner{
+					width:50px;
+					height:50px;
+					border:5px solid #fff;
+					border-top:5px solid transparent;
+					border-radius:50%;
+					animation: spin 1s linear infinite;
+					}
+
+					@keyframes spin{
+					100%{
+						transform: rotate(360deg);
+					}
+					}
 					.wish-form{
 
 						position:relative;
@@ -1330,7 +1358,7 @@ margin: 10px 0px 0px 0px!important;
 				</div>
 				<div class="elementor-element elementor-element-37d4c221 ef slide-up elementor-widget elementor-widget-heading active" data-id="37d4c221" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default">Cahya &amp; Hasim</h2>				</div>
+					<h2 class="elementor-heading-title elementor-size-default">Hasim &amp; Cahya</h2>				</div>
 				</div>
 				<div class="elementor-element elementor-element-71689270 elementor-widget elementor-widget-spacer" data-id="71689270" data-element_type="widget" data-widget_type="spacer.default">
 				<div class="elementor-widget-container">

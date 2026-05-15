@@ -78,7 +78,7 @@ function render() {
 
           </div>
 
-          <div class="message">
+          <div class="message text-wrap">
             ${escapeHtml(item.message)}
           </div>
 
@@ -161,7 +161,8 @@ async function submitForm() {
     alert(`Max ${data.maxChar} karakter`);
     return;
   }
-
+  
+  document.getElementById("loading").style.display = "block";
   await comentarService.addComentar({
     id: generateRandomId(),
     name,
@@ -172,9 +173,10 @@ async function submitForm() {
 
   });
 
-  document.getElementById("name").value = "";
+  // document.getElementById("name").value = "";
   document.getElementById("message").value = "";
   document.getElementById("status").selectedIndex = 0;
+  document.getElementById("loading").style.display = "none";
 
   await loadData();
 }
